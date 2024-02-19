@@ -1,0 +1,247 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 20px;
+}
+
+/* Nav Bar  */
+
+/* Nav bar  */
+
+#navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 1px 2px 1px 2px whitesmoke;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 60px;
+}
+#navbar ul li {
+  list-style: none;
+}
+#navbar ul li a {
+  font-family: "poppins";
+  margin: 5px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#navbar ul li a:hover {
+  text-decoration: underline 2px #4908a4;
+}
+
+#navbar img {
+  width: 90%;
+}
+/* Nav Bar end  */
+
+#social-ne {
+  width: 100%;
+  height: 150px;
+  background-color: #e9e5ee;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-con1 {
+  margin: 5px 20px;
+}
+.social-con1 p {
+  font-family: "poppins";
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.social-con2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social-con2 img {
+  height: 35px;
+  margin: 3px;
+  transition: 0.5s;
+}
+.social-con2 img:hover {
+  transform: rotate(360deg);
+}
+/* Follow Us on */
+
+/* footer  */
+#footer {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 50px;
+  background-image: url(../Assets/asset\ 42.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+}
+#footer ul li {
+  list-style: none;
+  margin: 15px 0px;
+  font-family: "poppins";
+  color: black;
+  font-size: 0.8rem;
+  text-align: left;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+#footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer ul li a:hover {
+  text-decoration: underline black;
+}
+/* End footer  */
+/* EndFollow Us on */
+
+/* Copy right  */
+#copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 10px;
+}
+/* End Copy right  */
+
+/* Contact Part  */
+#contact-box {
+  height: 550px;
+  width: 100%;
+  padding: 20px 10px;
+  padding-top: 150px;
+}
+#contact-box h1 {
+  text-align: center;
+  color: rgb(26, 55, 78);
+  font-family: "poppins";
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#contact-box h2 {
+  text-align: center;
+  color: rgb(29, 63, 91);
+  font-family: "poppins";
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contact-flex {
+  display: flex;
+}
+
+.contact-flex ul {
+  display: flex;
+  height: 300px;
+  margin: auto;
+}
+
+.contact-flex ul li {
+  width: 33.33%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.contact-flex ul li:nth-child(1) {
+  animation: box1 0.8s ease-in-out 1;
+}
+.contact-flex ul li:nth-child(2) {
+  animation: box2 0.8s ease-in-out 1;
+}
+.contact-flex ul li:nth-child(3) {
+  animation: box3 0.8s ease-in-out 1;
+}
+
+@keyframes box1 {
+  0% {
+    transform: translateX(-400px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes box3 {
+  0% {
+    transform: translateX(400px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes box2 {
+  0% {
+    transform: translateY(200px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.con-img {
+  height: 70px;
+  width: 70px;
+  border-radius: 15px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.con-img > img {
+  width: 40px;
+}
+
+.contact-flex ul li h3 {
+  color: black;
+  font-family: "poppins";
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.contact-flex ul li p {
+  color: gray;
+  font-family: "poppins";
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+/* Contact Part  */
